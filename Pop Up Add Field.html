@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Add Field</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #e7e7ec;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* modal */
+.modal {
+  width: 900px;
+  margin: 40px auto;
+  background: #efeff2;
+  border-radius: 20px;
+  padding: 32px 40px 30px;
+}
+
+/* title */
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 26px;
+  color: #333;
+}
+
+/* label */
+.label {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.label span {
+  color: #c62828;
+}
+
+/* input & select */
+.input,
+.select {
+  width: 100%;
+  height: 48px;
+  background: #d9d9de;
+  border: none;
+  padding: 0 14px;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* dropdown icon */
+.select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23666' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}
+
+/* buttons */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.btn {
+  width: 110px;
+  height: 44px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn.cancel {
+  background: #bfc3c9;
+  color: #fff;
+}
+
+.btn.save {
+  background: #bfc3c9; /* di gambar keliatan disabled */
+  color: #fff;
+  opacity: 0.9;
+}
+</style>
+
+</head>
+<body>
+
+<div class="modal">
+  <div class="title">Add Field</div>
+
+  <div class="label"><span>*</span> Field Type</div>
+  <select class="select">
+    <option>No File Type Choosen</option>
+  </select>
+
+  <div class="label"><span>*</span> Field Name</div>
+  <input class="input" placeholder="Your Answer...">
+
+  <div class="label"><span>*</span> Label</div>
+  <input class="input" placeholder="Your Answer...">
+
+  <div class="label"><span>*</span> Data Source</div>
+  <select class="select">
+    <option>No File Type Choosen</option>
+  </select>
+
+  <div class="label"><span>*</span> Source Key</div>
+  <select class="select">
+    <option>No File Type Choosen</option>
+  </select>
+
+  <div class="actions">
+    <button class="btn cancel">Cancel</button>
+    <button class="btn save">Save</button>
+  </div>
+</div>
+
+</body>
+</html>

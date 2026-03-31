@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UMY Desktop Replica</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #e7e7ec;
+    }
+
+    .page {
+      min-height: 100vh;
+      background: #e7e7ec;
+    }
+
+    .topbar {
+      height: 68px;
+      background: #ffffff;
+      border-bottom: 1px solid #dddddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1px;
+    }
+
+    .left-actions {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+
+.image-container {
+  margin: 0;
+   display: inline-block;
+  padding: 0;
+}
+
+.image-container img {
+  display: block;
+}
+
+    .btn {
+      height: 40px;
+      padding: 0 16px;
+      background: #fff;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      border: 2px solid;
+      cursor: default;
+      user-select: none;
+    }
+
+    .btn.red { color: #b71919; border-color: #b71919; }
+    .btn.green { color: #14976f; border-color: #14976f; }
+
+    .icon-circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid currentColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 700;
+    }
+
+    .icon-box {
+      width: 16px;
+      height: 16px;
+      border: 1px solid currentColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      line-height: 1;
+      font-weight: 700;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .brand-badge {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #0b5d2a;
+      border: 4px solid #d3aa34;
+      box-shadow: inset 0 0 0 2px #0a3f1f;
+    }
+
+    .brand-text {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      color: #8c2b2b;
+    }
+
+    .brand-text .big {
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      margin-top: 1px;
+    }
+
+    .brand-text .small {
+      font-size: 9px;
+      line-height: 1.1;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 1px;
+      max-width: 110px;
+    }
+
+    .workspace {
+      display: flex;
+      justify-content: center;
+      padding: 82px 20px 50px;
+    }
+
+    .doc-frame {
+      width: 676px;
+      height: 1036px;
+      border-radius: 16px;
+      background: #bfbfc4;
+      padding: 13px;
+    }
+
+    .doc-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border: 1px solid #222;
+      background: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .topbar {
+        padding: 0 16px;
+        gap: 1px;
+        flex-wrap: wrap;
+        height: auto;
+        min-height: 68px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .workspace {
+        padding-top: 30px;
+      }
+
+      .doc-frame {
+        width: min(92vw, 676px);
+        height: auto;
+      }
+
+      .doc-image {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="left-actions">
+        <div class="image-container">
+          <img
+        class="doc-image"
+        src="addfield.png" 
+        style="width: 50%; height: auto;"
+        alt="Stakeholder"
+        />
+        </div>
+
+        <div class="image-container">
+          <img
+        class="doc-image"
+        src="addfield.png" 
+        style="width: 50%; height: auto;"
+        alt="Stakeholder"
+        />
+        </div>
+
+        <div class="image-container">
+          <img
+        class="doc-image"
+        src="addfield.png" 
+        style="width: 50%; height: auto;"
+        alt="Stakeholder"
+        />
+        </div>
+
+      <div class="brand">
+        <img
+        class="doc-image"
+        src="umy.png" 
+        style="width: 70%; height: auto;"
+        alt="Stakeholder"
+        />
+      </div>
+    </header>
+
+    <main class="workspace">
+      <div class="doc-frame">
+        <img
+          class="doc-image"
+          src="/mnt/data/91cbe7c4-79f5-4c6b-8bce-d0280f6d0b3d.png"
+          alt="Stakeholder"
+        />
+      </div>
+    </main>
+  </div>
+</body>
+</html>

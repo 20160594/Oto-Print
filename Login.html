@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oto-Print Login</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('login BG.png') no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay blur + darken */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  background: rgba(0, 0, 0, 0.3); 
+  z-index: 0;
+}
+
+/* Overlay blur + fade */
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(1px);
+  background: rgba(255,255,255,0.4);
+  z-index: 0;
+  
+}
+
+/* LOGIN CARD */
+.card {
+  position: relative;
+  z-index: 1;
+  width: 515px;
+  background: #f4f4f4;
+  padding: 40px;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* FORM */
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #ddd;
+  border-radius: 3px;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background: #0b4d2b;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #083b20;
+}
+
+/* Divider */
+.divider {
+  margin-top: 25px;
+  height: 1px;
+  background: #ccc;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <div class="title">Welcome to Admin Oto-Print</div>
+  <div class="subtitle">Please Use Admin Account</div>
+
+  <form>
+    <label>Email Address</label>
+    <input type="email" placeholder="">
+
+    <label>Password</label>
+    <input type="password" placeholder="">
+
+    <button class="btn">Log In</button>
+  </form>
+
+  <div class="divider"></div>
+</div>
+
+</body>
+</html>
